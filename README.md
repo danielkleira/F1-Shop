@@ -1,4 +1,4 @@
-# kenzieShop
+# F1 Shop
 
 ![alt text](https://i.ibb.co/h1VQGMY/collagem-KShop.png)
 
@@ -8,7 +8,7 @@ KenzieShop é uma plataforma de compras, que permite ao usuário adicionar itens
 
 # :link: Link da aplicação
 
-https://react-entrega-s3-kenzishop-com-context-api-danielkleira.vercel.app/
+https://f1shop.vercel.app/
 
 # :computer: Tecnologias / Bibliotecas Utilizadas
 
