@@ -19,4 +19,4 @@ https://f1shop.vercel.app/
 - Styled-Components
 - React Router Dom
 - Material UI
-- Context API
+- Redux

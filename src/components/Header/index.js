@@ -23,7 +23,7 @@ const Header=()=>{
     return(
         <>
         <Cabecalho>
-            <h1 onClick={paraHome}>KenzieShop </h1>
+            <h1 onClick={paraHome}>F1 Shop </h1>
             
 
             <span>
