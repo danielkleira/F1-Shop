@@ -1,12 +1,10 @@
-
-import CriaCard from "../CriarCard"
-import { ProductsContext } from "../../providers/products"
-import { useContext } from "react"
-import { ListaStyled } from "./styles"
+import { useSelector } from "react-redux"
+import CriaCard from "../CriaCard"
+import { ListaStyled } from "./style"
 
 const Vitrine = () =>{
 
-    const {products} = useContext(ProductsContext)
+    const {products} = useSelector(store => store)
 
     return(
         <ListaStyled>

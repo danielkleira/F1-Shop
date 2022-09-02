@@ -1,13 +1,15 @@
-import { ListaCarrinho, Container, DivTitulo } from "./styles"
+import { useDispatch, useSelector } from "react-redux"
+import { removeCartThunk } from "../../store/modules/cart/thunks"
+import { ListaCarrinho, Container, DivTitulo } from "./style"
 import { Button } from "@material-ui/core"
-import { useContext } from "react"
-import { CartContext } from "../../providers/cartProducts"
 
 const Cart = () =>{
-    const {cart, removeFromCart} = useContext(CartContext)
-
-    const handleRemove=(item)=>{
-        removeFromCart(item)
+    const {cart} = useSelector(store => store)
+    const dispatch = useDispatch()
+    console.log(cart)
+    const handleRemove = (id) =>{
+        console.log(id)
+        dispatch(removeCartThunk(id))
     }
     
     return (
@@ -39,7 +41,7 @@ const Cart = () =>{
              <section>
                 <h3>Resumo do pedido</h3>
                 <p>{cart.length} produtos <span>R$ {cart.reduce((acc,produto) => acc + produto.price ,0).toFixed(2)}</span></p>
-                <Button  variant='contained' color='primary' size='large'>Finalizar Pedido</Button>
+                <Button variant='contained' color='primary' size='large'>Finalizar Pedido</Button>
             </section>
             }
            

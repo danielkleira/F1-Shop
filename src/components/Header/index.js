@@ -1,16 +1,15 @@
 import { useHistory } from "react-router-dom";
-import {IconeCarrinho, Cabecalho, IconeEntra} from './styles'
-import { CartContext } from "../../providers/cartProducts";
-import { useContext } from "react";
+import {IconeCarrinho, Cabecalho, IconeEntra} from './style'
+import { useSelector } from "react-redux";
 
 
 const Header=()=>{
     const history =useHistory()
-    const {cart}= useContext(CartContext)
+    const {cart}= useSelector(store=> store)
 
 
     const paraCarrinho=()=>{
-        history.push('/cart')
+        history.push('/carrinho')
     }
 
     const paraHome=()=>{
