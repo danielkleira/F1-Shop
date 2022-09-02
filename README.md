@@ -4,7 +4,7 @@
 
 # :bulb: Descrição
 
-KenzieShop é uma plataforma de compras, que permite ao usuário adicionar itens acessar o carrinho e excluir itens.
+F1 shop é uma plataforma de compras, que permite ao usuário adicionar itens acessar o carrinho e excluir itens.
 
 # :link: Link da aplicação
 
